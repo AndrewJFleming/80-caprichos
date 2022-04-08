@@ -1,0 +1,50 @@
+.profile-dropdown-wrapper {
+  position: absolute;
+  background-color: #fff;
+  top: 60px;
+  right: 20px;
+  width: 200px;
+  padding: 15px 0;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.collapseProfile {
+  display: none;
+}
+
+.profile-dropdown-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.profile-dropdown-list li {
+  padding: 5px 15px;
+  font-size: 20px;
+}
+.profile-dropdown-list li:hover {
+  cursor: pointer;
+}
+
+/*
+Add dividers after all but the last dropdown-section span.
+*/
+.dropdown-section:not(:last-of-type):after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.profile-dropdown-list li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 899px) {
+  .profile-dropdown-wrapper {
+    display: none;
+  }
+}

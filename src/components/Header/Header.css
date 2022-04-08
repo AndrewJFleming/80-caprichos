@@ -1,0 +1,78 @@
+header {
+  position: static;
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.top-nav {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-branding-link {
+  display: none;
+  box-sizing: border-box;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  align-items: center;
+}
+.header-logo {
+  width: 100%;
+}
+
+.close-button-wrapper {
+  height: 50px;
+}
+.close-button-icon {
+  padding: 10px 20px;
+  font-size: 30px;
+  color: #5d9cd6;
+  display: none;
+  cursor: pointer;
+}
+
+.profile-avatar {
+  background-color: #5d9cd6;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.profile-avatar-inner {
+  text-decoration: none;
+  font-family: "IM Fell English SC", serif;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+}
+
+@media screen and (max-width: 899px) {
+  header {
+    padding-right: 0px;
+  }
+  .header-branding-link {
+    display: flex;
+  }
+  .top-nav {
+    justify-content: space-between;
+  }
+  header li a {
+    display: none;
+  }
+  .close-button-icon {
+    display: inline-block;
+  }
+  .profile-avatar {
+    display: none;
+  }
+}
