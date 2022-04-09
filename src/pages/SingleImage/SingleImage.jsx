@@ -9,7 +9,7 @@ const SingleImage = () => {
   const { imageId } = useParams();
 
   return (
-    <div className="single-page-wrapper">
+    <div className="page-comp-wrapper">
       {imageData
         .filter((image) => image.id === imageId)
         .map((image) => (

@@ -3,8 +3,9 @@
   color: #ccc;
   width: 200px;
   height: 100vh;
-  position: static;
+  position: fixed;
   padding: 0;
+  z-index: 100;
 }
 
 .branding-wrapper-link {
@@ -34,7 +35,7 @@
   Compensate for 50px header height in view height percentage
   */
   .vert-menu-wrapper {
-    position: absolute;
+    position: fixed;
     top: 50px;
     height: calc(100vh - 50px);
   }

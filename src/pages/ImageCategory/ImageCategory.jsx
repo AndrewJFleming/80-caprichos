@@ -7,7 +7,7 @@ import "./ImageCategory.css";
 const ImageCategory = () => {
   const { catId } = useParams();
   return (
-    <div>
+    <div className="page-comp-wrapper">
       {categoryData[0].subCats
         .filter((cat) => cat.slug === catId)
         .map((cat) => (
