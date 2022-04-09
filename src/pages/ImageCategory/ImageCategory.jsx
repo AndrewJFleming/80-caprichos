@@ -1,18 +1,55 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
-import { categoryData } from "../../data.js";
+import { Container, Row, Col } from "react-bootstrap";
+import { categoryData, imageData } from "../../data.js";
 import "./ImageCategory.css";
 
 const ImageCategory = () => {
   const { catId } = useParams();
+
+  console.log(catId);
+  console.log(
+    imageData.filter((image) =>
+      image.categories.find((cat) => cat.slug === catId)
+    )
+  );
+
   return (
     <div className="page-comp-wrapper">
-      {categoryData[0].subCats
-        .filter((cat) => cat.slug === catId)
-        .map((cat) => (
-          <h1>{cat.title}</h1>
-        ))}
+      <Container>
+        {categoryData[0].subCats
+          .filter((cat) => cat.slug === catId)
+          .map((cat) => (
+            <h1>{cat.title}</h1>
+          ))}
+        <Row>
+          {imageData
+            .filter((image) =>
+              image.categories.find((cat) => cat.slug === catId)
+            )
+            .map((item) => (
+              <Col className="gallery-col" xs="6" sm="4" md="4" lg="3" xl="2">
+                <Link to={`/caprichos/${item.id}`}>
+                  <img
+                    src={item.squareUrl}
+                    alt={`${item.title}, category gallery square thumbnail.`}
+                  />
+                </Link>
+                <Link
+                  className="gallery-item-title-link"
+                  to={`/caprichos/${item.id}`}
+                >
+                  <p className="gallery-item-title">
+                    {item.title.length <= 13
+                      ? item.title
+                      : `${item.title.substring(0, 14)}...`}
+                  </p>
+                </Link>
+              </Col>
+            ))}
+        </Row>
+      </Container>
     </div>
   );
 };
