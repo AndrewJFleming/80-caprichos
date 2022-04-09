@@ -5,8 +5,6 @@ import VerticalMenu from "./components/VerticalMenu/VerticalMenu";
 import Header from "./components/Header/Header";
 import { categoryData, backgroundColorData } from "./data";
 import { Routes, Route } from "react-router-dom";
-import Portfolio from "./pages/Portfolio/Portfolio";
-import About from "./pages/About/About";
 import SingleImage from "./pages/SingleImage/SingleImage";
 import ImageCategory from "./pages/ImageCategory/ImageCategory";
 
@@ -36,10 +34,8 @@ function App() {
         />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/caprichos" element={<Portfolio />} />
           <Route path="/caprichos/:imageId" element={<SingleImage />} />
-          <Route path="/category/:catName" element={<ImageCategory />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/category/:catId" element={<ImageCategory />} />
         </Routes>
       </div>
     </div>

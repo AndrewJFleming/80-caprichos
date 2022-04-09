@@ -18,26 +18,26 @@ export const categoryData = [
     id: "nlSqYG",
     title: "Themes",
     collapsible: true,
-    subcats: [
+    subCats: [
       {
-        id: "wFeSdq",
+        id: "the-concerns-of-maidens",
         title: "The Concerns of Maidens",
-        link: "/category/the-concerns-of-maidens",
+        slug: "the-concerns-of-maidens",
       },
       {
-        id: "wFeSdq",
+        id: "behaving-like-beasts",
         title: "Behaving like Beasts",
-        link: "/category/behaving-like-beasts",
+        slug: "behaving-like-beasts",
       },
       {
-        id: "FcGWHR",
+        id: "witchcraft",
         title: "Witchcraft",
-        link: "/category/witchcraft",
+        slug: "witchcraft",
       },
       {
-        id: "nLDOEs",
+        id: "fantasies",
         title: "Fantasies of Monsters",
-        link: "/category/fantasies-of-monsters",
+        slug: "fantasies",
       },
     ],
   },
@@ -45,21 +45,21 @@ export const categoryData = [
   //   id: "5ivnKg",
   //   title: "About",
   //   collapsible: false,
-  //   subcats: [
+  //   subCats: [
   //     {
   //       id: "vKT2kK",
   //       title: "Intro",
-  //       link: "/about/#intro",
+  //       slug: "/#intro",
   //     },
   //     {
   //       id: "vKT2kK",
   //       title: "Work History",
-  //       link: "/about/#work-history",
+  //       slug: "/#work-history",
   //     },
   //     {
   //       id: "4AEJSr",
   //       title: "Education",
-  //       link: "/about/#education",
+  //       slug: "/#education",
   //     },
   //   ],
   // },

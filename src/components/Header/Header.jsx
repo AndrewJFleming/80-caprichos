@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import useClickOutside from "../../hooks/useClickOutside";
 
 import LogoDark from "../../images/los-caprichos-logo.png";
 import ProfileDropdown from "./ProfileDropdown/ProfileDropdown";
 import "./Header.css";
 
 const Header = ({ vertMenuCollapsed, handleVertCollapse }) => {
-  const { ref, isVisible, setIsVisible } = useClickOutside(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const ref = useRef();
+
+  useEffect(() => {
+    const checkIfClickedOutside = (e) => {
+      if (isMenuOpen && ref.current && !ref.current.contains(e.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", checkIfClickedOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", checkIfClickedOutside);
+    };
+  }, [isMenuOpen]);
 
   return (
-    <header>
+    <header ref={ref}>
       <nav className="top-nav">
         <Link className="header-branding-link" to="/">
           <img
@@ -21,8 +35,7 @@ const Header = ({ vertMenuCollapsed, handleVertCollapse }) => {
         </Link>
         <div
           className="profile-avatar"
-          ref={ref}
-          onClick={() => setIsVisible(!isVisible)}
+          onClick={() => setIsMenuOpen((isMenuOpen) => !isMenuOpen)}
         >
           <li className="profile-avatar-inner">P</li>
         </div>
@@ -34,7 +47,7 @@ const Header = ({ vertMenuCollapsed, handleVertCollapse }) => {
           )}
         </div>
       </nav>
-      {isVisible && <ProfileDropdown myRef={ref} />}
+      {isMenuOpen && <ProfileDropdown />}
     </header>
   );
 };

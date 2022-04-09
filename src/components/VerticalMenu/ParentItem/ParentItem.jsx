@@ -26,14 +26,14 @@ const ParentItem = ({ cat, handleVertCollapse }) => {
           <i class="fal fa-angle-down vert-menu-item-angle"></i>
         )}
       </li>
-      {cat.subcats && (
+      {cat.subCats && (
         <ul
           className={`subcat-unordered-list ${isCollapsed ? "collapsed" : ""}`}
         >
-          {cat.subcats.map((subcat) => (
+          {cat.subCats.map((subCat) => (
             <SubCatItem
-              key={subcat.id}
-              subcat={subcat}
+              key={subCat.id}
+              subCat={subCat}
               handleVertCollapse={handleVertCollapse}
             />
           ))}

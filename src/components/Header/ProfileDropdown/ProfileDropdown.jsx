@@ -2,9 +2,9 @@ import React from "react";
 
 import "./ProfileDropdown.css";
 
-const ProfileDropdown = ({ myRef }) => {
+const ProfileDropdown = () => {
   return (
-    <div ref={myRef} className="profile-dropdown-wrapper">
+    <div className="profile-dropdown-wrapper">
       <ul className="profile-dropdown-list">
         <span className="dropdown-section">
           <li>Peter</li>
