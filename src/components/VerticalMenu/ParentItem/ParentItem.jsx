@@ -20,7 +20,7 @@ const ParentItem = ({ cat, handleVertCollapse }) => {
         key={cat.id}
         onClick={handleCollapse}
       >
-        <i class="fas fa-cloud vert-menu-item-icon"></i>
+        <i class="fas fa-folder vert-menu-item-icon"></i>
         <span className="parent-list-item-text">{cat.title}</span>
         {cat.collapsible && (
           <i class="fal fa-angle-down vert-menu-item-angle"></i>

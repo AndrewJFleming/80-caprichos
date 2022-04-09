@@ -20,9 +20,9 @@ export const categoryData = [
     collapsible: true,
     subCats: [
       {
-        id: "the-concerns-of-maidens",
-        title: "The Concerns of Maidens",
-        slug: "the-concerns-of-maidens",
+        id: "concerns-of-maidens",
+        title: "Concerns of Maidens",
+        slug: "concerns-of-maidens",
       },
       {
         id: "behaving-like-beasts",
@@ -80,9 +80,7 @@ export const imageData = [
     id: "2",
     title: "El sí pronuncian y la mano alargan al primero que llega",
     englishTitle: "They say yes and give their hand to the first comer",
-    categories: [
-      { slug: "the-concerns-of-maidens", name: "The Concerns of Maidens" },
-    ],
+    categories: [{ slug: "concerns-of-maidens", name: "Concerns of Maidens" }],
     fullsizeUrl:
       "https://live.staticflickr.com/65535/51991065629_6de939edf9_o.jpg",
     squareUrl:
@@ -112,9 +110,7 @@ export const imageData = [
     id: "5",
     title: "Tal para cual",
     englishTitle: "Two of a kind",
-    categories: [
-      { slug: "the-concerns-of-maidens", name: "The Concerns of Maidens" },
-    ],
+    categories: [{ slug: "concerns-of-maidens", name: "Concerns of Maidens" }],
     fullsizeUrl:
       "https://live.staticflickr.com/65535/51989791892_a784fcc4c4_o.jpg",
     squareUrl:
@@ -124,9 +120,7 @@ export const imageData = [
     id: "6",
     title: "Nadie se conoce",
     englishTitle: "Nobody knows himself",
-    categories: [
-      { slug: "the-concerns-of-maidens", name: "The Concerns of Maidens" },
-    ],
+    categories: [{ slug: "concerns-of-maidens", name: "Concerns of Maidens" }],
     fullsizeUrl:
       "https://live.staticflickr.com/65535/51990788106_633eae6b6b_o.jpg",
     squareUrl:
@@ -136,9 +130,7 @@ export const imageData = [
     id: "7",
     title: "Ni así la distingue",
     englishTitle: "Even thus he cannot make her out",
-    categories: [
-      { slug: "the-concerns-of-maidens", name: "The Concerns of Maidens" },
-    ],
+    categories: [{ slug: "concerns-of-maidens", name: "Concerns of Maidens" }],
     fullsizeUrl:
       "https://live.staticflickr.com/65535/51990847348_2dcf19f76a_o.jpg",
     squareUrl:
@@ -148,9 +140,7 @@ export const imageData = [
     id: "8",
     title: "¡Que se la llevaron!",
     englishTitle: "So they carried her off!",
-    categories: [
-      { slug: "the-concerns-of-maidens", name: "The Concerns of Maidens" },
-    ],
+    categories: [{ slug: "concerns-of-maidens", name: "Concerns of Maidens" }],
     fullsizeUrl:
       "https://live.staticflickr.com/65535/51991071369_421e7bcf2c_o.jpg",
     squareUrl:
@@ -160,9 +150,7 @@ export const imageData = [
     id: "9",
     title: "Tántalo",
     englishTitle: "Tantalus",
-    categories: [
-      { slug: "the-concerns-of-maidens", name: "The Concerns of Maidens" },
-    ],
+    categories: [{ slug: "concerns-of-maidens", name: "Concerns of Maidens" }],
     fullsizeUrl:
       "https://live.staticflickr.com/65535/51990787256_021daff340_o.jpg",
     squareUrl:
@@ -172,9 +160,7 @@ export const imageData = [
     id: "10",
     title: "El amor y la muerte",
     englishTitle: "Love and death",
-    categories: [
-      { slug: "the-concerns-of-maidens", name: "The Concerns of Maidens" },
-    ],
+    categories: [{ slug: "concerns-of-maidens", name: "Concerns of Maidens" }],
     fullsizeUrl:
       "https://live.staticflickr.com/65535/51990786981_05ab1a1ea2_o.jpg",
     squareUrl:
@@ -214,9 +200,7 @@ export const imageData = [
     id: "14",
     title: "¡Qué sacrificio!",
     englishTitle: "What a sacrifice!",
-    categories: [
-      { slug: "the-concerns-of-maidens", name: "The Concerns of Maidens" },
-    ],
+    categories: [{ slug: "concerns-of-maidens", name: "Concerns of Maidens" }],
     fullsizeUrl:
       "https://live.staticflickr.com/65535/51989790112_87c59a32a9_o.jpg",
     squareUrl:
@@ -226,9 +210,7 @@ export const imageData = [
     id: "15",
     title: "Bellos consejos",
     englishTitle: "Good advice",
-    categories: [
-      { slug: "the-concerns-of-maidens", name: "The Concerns of Maidens" },
-    ],
+    categories: [{ slug: "concerns-of-maidens", name: "Concerns of Maidens" }],
     fullsizeUrl:
       "https://live.staticflickr.com/65535/51990846023_f618f59925_o.jpg",
     squareUrl:
@@ -238,9 +220,7 @@ export const imageData = [
     id: "16",
     title: "Dios la perdone: y era su madre",
     englishTitle: "For Heaven's sake: and it was her mother",
-    categories: [
-      { slug: "the-concerns-of-maidens", name: "The Concerns of Maidens" },
-    ],
+    categories: [{ slug: "concerns-of-maidens", name: "Concerns of Maidens" }],
     fullsizeUrl:
       "https://live.staticflickr.com/65535/51991345115_ee1584d950_o.jpg",
     squareUrl:
@@ -250,9 +230,7 @@ export const imageData = [
     id: "17",
     title: "Bien tirada está",
     englishTitle: "It is nicely stretched",
-    categories: [
-      { slug: "the-concerns-of-maidens", name: "The Concerns of Maidens" },
-    ],
+    categories: [{ slug: "concerns-of-maidens", name: "Concerns of Maidens" }],
     fullsizeUrl:
       "https://live.staticflickr.com/65535/51990845353_28f965be92_o.jpg",
     squareUrl:
@@ -342,9 +320,7 @@ export const imageData = [
     id: "26",
     title: "Ya tienen asiento",
     englishTitle: "Now they are sitting well",
-    categories: [
-      { slug: "the-concerns-of-maidens", name: "The Concerns of Maidens" },
-    ],
+    categories: [{ slug: "concerns-of-maidens", name: "Concerns of Maidens" }],
     fullsizeUrl:
       "https://live.staticflickr.com/65535/51990845048_e32537108d_o.jpg",
     squareUrl:
@@ -354,9 +330,7 @@ export const imageData = [
     id: "27",
     title: "¿Quién más rendido?",
     englishTitle: "Who more is surrendered?",
-    categories: [
-      { slug: "the-concerns-of-maidens", name: "The Concerns of Maidens" },
-    ],
+    categories: [{ slug: "concerns-of-maidens", name: "Concerns of Maidens" }],
     fullsizeUrl:
       "https://live.staticflickr.com/65535/51991073529_028d8276b2_o.jpg",
     squareUrl:
@@ -396,9 +370,7 @@ export const imageData = [
     id: "31",
     title: "Ruega por ella",
     englishTitle: "She prays for her",
-    categories: [
-      { slug: "the-concerns-of-maidens", name: "The Concerns of Maidens" },
-    ],
+    categories: [{ slug: "concerns-of-maidens", name: "Concerns of Maidens" }],
     fullsizeUrl:
       "https://live.staticflickr.com/65535/51989792767_784c321b2d_o.jpg",
     squareUrl:
@@ -408,9 +380,7 @@ export const imageData = [
     id: "32",
     title: "Porque fue sensible",
     englishTitle: "Because she was susceptible",
-    categories: [
-      { slug: "the-concerns-of-maidens", name: "The Concerns of Maidens" },
-    ],
+    categories: [{ slug: "concerns-of-maidens", name: "Concerns of Maidens" }],
     fullsizeUrl:
       "https://live.staticflickr.com/65535/51991348210_8f8c987a74_o.jpg",
     squareUrl:
@@ -440,9 +410,7 @@ export const imageData = [
     id: "35",
     title: "Le descañona",
     englishTitle: "She fleeces him",
-    categories: [
-      { slug: "the-concerns-of-maidens", name: "The Concerns of Maidens" },
-    ],
+    categories: [{ slug: "concerns-of-maidens", name: "Concerns of Maidens" }],
     fullsizeUrl:
       "https://live.staticflickr.com/65535/51990848533_8704d11dec_o.jpg",
     squareUrl:
@@ -452,9 +420,7 @@ export const imageData = [
     id: "36",
     title: "Mala noche",
     englishTitle: "A bad night",
-    categories: [
-      { slug: "the-concerns-of-maidens", name: "The Concerns of Maidens" },
-    ],
+    categories: [{ slug: "concerns-of-maidens", name: "Concerns of Maidens" }],
     fullsizeUrl:
       "https://live.staticflickr.com/65535/51991063671_58e127e208_o.jpg",
     squareUrl:
@@ -860,9 +826,7 @@ export const imageData = [
     id: "73",
     title: "Mejor es holgar",
     englishTitle: "It is better to be lazy",
-    categories: [
-      { slug: "the-concerns-of-maidens", name: "The Concerns of Maidens" },
-    ],
+    categories: [{ slug: "concerns-of-maidens", name: "Concerns of Maidens" }],
     fullsizeUrl:
       "https://live.staticflickr.com/65535/51989792162_6544324a8e_o.jpg",
     squareUrl:

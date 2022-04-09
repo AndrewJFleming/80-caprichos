@@ -17,16 +17,14 @@ const Home = () => {
                   alt={`${image.title}, square thumbnail`}
                 />
               </Link>
-              <Link
-                className="gallery-item-title-link"
-                to={`/caprichos/${image.id}`}
-              >
-                <p className="gallery-item-title">
+              <p className="gallery-item-title">
+                <span className="print-id">No. {image.id},&nbsp;</span>
+                <Link to={`/caprichos/${image.id}`}>
                   {image.title.length <= 13
                     ? image.title
                     : `${image.title.substring(0, 14)}...`}
-                </p>
-              </Link>
+                </Link>
+              </p>
             </Col>
           ))}
         </Row>

@@ -3,7 +3,6 @@ import { useParams, Link } from "react-router-dom";
 
 import { Container, Row, Col } from "react-bootstrap";
 import { categoryData, imageData } from "../../data.js";
-import "./ImageCategory.css";
 
 const ImageCategory = () => {
   const { catId } = useParams();
@@ -36,16 +35,18 @@ const ImageCategory = () => {
                     alt={`${item.title}, category gallery square thumbnail.`}
                   />
                 </Link>
-                <Link
-                  className="gallery-item-title-link"
-                  to={`/caprichos/${item.id}`}
-                >
-                  <p className="gallery-item-title">
+
+                <p className="gallery-item-title">
+                  <span className="print-id">No. {item.id},&nbsp;</span>
+                  <Link
+                    className="gallery-item-title-link"
+                    to={`/caprichos/${item.id}`}
+                  >
                     {item.title.length <= 13
                       ? item.title
                       : `${item.title.substring(0, 14)}...`}
-                  </p>
-                </Link>
+                  </Link>
+                </p>
               </Col>
             ))}
         </Row>

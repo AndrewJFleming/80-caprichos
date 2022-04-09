@@ -43,21 +43,25 @@ h6,
   text-align: center;
 }
 
-.gallery-item-title-link {
-  color: #713600;
-}
-.gallery-item-title-link:hover,
-.gallery-item-title-link:active {
-  color: #303030;
-}
-
 .gallery-item-title {
   margin-top: 8px;
+}
+.gallery-item-title a {
+  color: #713600;
+}
+.gallery-item-title a:hover,
+.gallery-item-title a:active {
+  color: #303030;
 }
 
 .app-inner {
   margin-left: 200px;
 }
+
+.print-id {
+  font-weight: 600;
+}
+
 @media screen and (max-width: 899px) {
   .app-inner {
     margin-left: 0;
