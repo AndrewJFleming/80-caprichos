@@ -36,3 +36,20 @@ h6,
 .page-comp-wrapper h1 {
   text-align: center;
 }
+
+.gallery-col {
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.gallery-item-title-link {
+  color: #713600;
+}
+.gallery-item-title-link:hover,
+.gallery-item-title-link:active {
+  color: #303030;
+}
+
+.gallery-item-title {
+  margin-top: 8px;
+}

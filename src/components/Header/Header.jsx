@@ -37,7 +37,7 @@ const Header = ({ vertMenuCollapsed, handleVertCollapse }) => {
           className="profile-avatar"
           onClick={() => setIsMenuOpen((isMenuOpen) => !isMenuOpen)}
         >
-          <li className="profile-avatar-inner">P</li>
+          <span className="profile-avatar-inner">P</span>
         </div>
         <div className="close-button-wrapper" onClick={handleVertCollapse}>
           {vertMenuCollapsed ? (
