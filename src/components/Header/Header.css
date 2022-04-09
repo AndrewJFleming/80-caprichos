@@ -59,6 +59,7 @@ header {
 @media screen and (max-width: 899px) {
   header {
     padding-right: 0px;
+    width: 100%;
   }
   .header-branding-link {
     display: flex;

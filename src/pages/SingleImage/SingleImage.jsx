@@ -14,14 +14,15 @@ const SingleImage = () => {
         .filter((image) => image.id === imageId)
         .map((image) => (
           <Container>
-            <div>
+            <h2 className="single-image-title">{image?.title}</h2>
+            <h5 className="single-image-english">{image?.englishTitle}</h5>
+            <div classname="single-image-wrapper">
               <img
                 className="single-image-fullsize"
                 src={image?.fullsizeUrl}
                 alt={image?.title}
               />
             </div>
-            <h2>{image?.title}</h2>
           </Container>
         ))}
     </div>

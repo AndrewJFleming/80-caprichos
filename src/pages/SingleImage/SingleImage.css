@@ -2,6 +2,21 @@
   text-align: center;
 }
 
-.single-image-fullsize {
+.single-image-wrapper {
   width: 100%;
+}
+
+.single-image-fullsize {
+  display: block;
+  margin: 0 auto;
+  height: 80vh;
+}
+
+.single-image-title {
+  margin: 2rem 0 0 0;
+  text-align: center;
+}
+.single-image-english {
+  margin: 0 0 1rem 0;
+  text-align: center;
 }
