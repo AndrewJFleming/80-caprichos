@@ -15,7 +15,7 @@ export const backgroundColorData = [
 
 export const categoryData = [
   {
-    id: "nlSqYG",
+    id: "nlSqYP",
     title: "Themes",
     collapsible: true,
     subCats: [
@@ -41,28 +41,6 @@ export const categoryData = [
       },
     ],
   },
-  // {
-  //   id: "5ivnKg",
-  //   title: "About",
-  //   collapsible: false,
-  //   subCats: [
-  //     {
-  //       id: "vKT2kK",
-  //       title: "Intro",
-  //       slug: "/#intro",
-  //     },
-  //     {
-  //       id: "vKT2kK",
-  //       title: "Work History",
-  //       slug: "/#work-history",
-  //     },
-  //     {
-  //       id: "4AEJSr",
-  //       title: "Education",
-  //       slug: "/#education",
-  //     },
-  //   ],
-  // },
 ];
 
 export const imageData = [
