@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import LogoDark from "../../images/los-caprichos-logo.png";
+import DonkeyLogo from "../../images/donkey-logo, duotone.svg";
 import ProfileDropdown from "./ProfileDropdown/ProfileDropdown";
 import "./Header.css";
 
@@ -30,15 +31,23 @@ const Header = ({ vertMenuCollapsed, handleVertCollapse }) => {
           <img
             className="header-logo"
             src={LogoDark}
-            alt="hostwinds logo dark variant"
+            alt="80 Caprichos logo dark variant"
           />
         </Link>
-        <div
+        {/* <div
           className="profile-avatar"
           onClick={() => setIsMenuOpen((isMenuOpen) => !isMenuOpen)}
         >
           <span className="profile-avatar-inner">P</span>
-        </div>
+        </div> */}
+
+        <img
+          className="profile-avatar"
+          onClick={() => setIsMenuOpen((isMenuOpen) => !isMenuOpen)}
+          // src="https://gist.githubusercontent.com/AndrewJFleming/4e0a797c8db8da6bb94a170b2ad6d2c1/raw/cf4f7d504b27eadb3fc5fa8984976e2f1aaf5d91/donkey-logo.svg"
+          src={DonkeyLogo}
+        />
+
         <div className="close-button-wrapper" onClick={handleVertCollapse}>
           {vertMenuCollapsed ? (
             <i class="fas fa-bars close-button-icon"></i>
