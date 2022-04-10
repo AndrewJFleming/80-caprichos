@@ -8,11 +8,12 @@ const Home = () => {
   return (
     <div className="page-comp-wrapper">
       <Container>
-        <h1 className="page-component-title">80 CAPRICHOS</h1>
-        <p className="home-title-translation">
-          <em>(Eighty Caprices)</em>
-        </p>
-
+        <div className="page-component-title">
+          <h1>80 CAPRICHOS</h1>
+          <p className="home-title-translation">
+            <em>(Eighty Caprices)</em>
+          </p>
+        </div>
         <Row>
           {imageData.map((image) => (
             <Col className="gallery-col" xs="6" sm="4" md="4" lg="3" xl="2">

@@ -13,7 +13,7 @@ const ImageCategory = () => {
         {categoryData[0].subCats
           .filter((cat) => cat.slug === catId)
           .map((cat) => (
-            <h1>{cat.title}</h1>
+            <h1 className="page-component-title">{cat.title}</h1>
           ))}
         <Row>
           {imageData
