@@ -7,13 +7,6 @@ import { categoryData, imageData } from "../../data.js";
 const ImageCategory = () => {
   const { catId } = useParams();
 
-  console.log(catId);
-  console.log(
-    imageData.filter((image) =>
-      image.categories.find((cat) => cat.slug === catId)
-    )
-  );
-
   return (
     <div className="page-comp-wrapper">
       <Container>
