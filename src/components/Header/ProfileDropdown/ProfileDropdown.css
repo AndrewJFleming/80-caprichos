@@ -1,7 +1,7 @@
 .profile-dropdown-wrapper {
   position: absolute;
   background-color: #fff;
-  top: 60px;
+  top: 70px;
   right: 20px;
   width: 200px;
   padding: 15px 0;
@@ -26,6 +26,16 @@
 }
 .profile-dropdown-list li:hover {
   cursor: pointer;
+}
+
+.dropdown-item-link,
+.dropdown-item-link {
+  color: #713600;
+}
+.dropdown-item-link:hover,
+.dropdown-item-link:active {
+  text-decoration: none;
+  color: #120d06;
 }
 
 /*

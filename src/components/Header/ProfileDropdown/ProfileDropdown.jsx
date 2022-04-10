@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./ProfileDropdown.css";
 
@@ -7,15 +8,12 @@ const ProfileDropdown = () => {
     <div className="profile-dropdown-wrapper">
       <ul className="profile-dropdown-list">
         <span className="dropdown-section">
-          <li>Peter</li>
-          <li>Team Name</li>
-        </span>
-        <span className="dropdown-section">
-          <li>Create a Team</li>
-          <li>Edit Profile</li>
-        </span>
-        <span className="dropdown-section">
-          <li>Logout</li>
+          <Link className="dropdown-item-link" to="/about">
+            <li>About</li>
+          </Link>
+          <Link className="dropdown-item-link" to="/contact">
+            <li>Contact</li>
+          </Link>
         </span>
       </ul>
     </div>
