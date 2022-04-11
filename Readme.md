@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/AndrewJFleming/embossed-react-ecommerce">
-    <img src="src/images/los-caprichos-logo.png" alt="Logo" height="80">
+    <img src="src/images/los-caprichos-logo.png" alt="Logo">
   </a>
 
   <h3 align="center">80 Caprichos</h3>
@@ -42,14 +42,10 @@ The aim of the project is to present high resolution scans of Goya's prints and 
 
 _Check out the <a href="https://80-caprichos.netlify.app/">80 Caprichos demo hosted on Netlify</a> to explore the gallery._
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ### Built With
 
 - [React.js](https://reactjs.org/)
 - [Bootstrap](https://getbootstrap.com)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
 
