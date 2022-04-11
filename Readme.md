@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/AndrewJFleming/embossed-react-ecommerce">
+  <a href="https://github.com/AndrewJFleming/80-caprichos">
     <img src="src/images/los-caprichos-logo.png" alt="Logo">
   </a>
 
