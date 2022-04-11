@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Logo from "../../images/los-caprichos-logo, dark.png";
+import PageCompLinks from "../PageCompLinks/PageCompLinks";
 import ParentItem from "./ParentItem/ParentItem";
 import "./VerticalMenu.css";
 const VerticalMenu = ({
+  otherLinks,
   categories,
   vertMenuCollapsed,
   backgroundColor,
@@ -27,6 +29,11 @@ const VerticalMenu = ({
               handleVertCollapse={handleVertCollapse}
             />
           ))}
+          {otherLinks && (
+            <div className="other-link-wrapper">
+              <PageCompLinks onVertMenu={true} otherLinks={otherLinks} />
+            </div>
+          )}
         </ul>
       </nav>
     </div>

@@ -30,6 +30,11 @@
   padding-bottom: 3px;
 }
 
+.other-link-wrapper {
+  padding: 10px 0;
+  display: none;
+}
+
 @media screen and (max-width: 899px) {
   /*
   Compensate for 50px header height in view height percentage
@@ -49,5 +54,9 @@
   }
   .branding-wrapper-link {
     display: none;
+  }
+
+  .other-link-wrapper {
+    display: block;
   }
 }
