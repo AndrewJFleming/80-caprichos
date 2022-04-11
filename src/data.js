@@ -13,6 +13,18 @@ export const backgroundColorData = [
   },
 ];
 
+export const otherLinks = [
+  {
+    id: "about",
+    title: "About",
+    link: "/about",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+    link: "/contact",
+  },
+];
 export const categoryData = [
   {
     id: "nlSqYP",
