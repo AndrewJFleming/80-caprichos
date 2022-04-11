@@ -43,6 +43,12 @@ Add dividers after all but the last dropdown-section span.
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+@media screen and (min-width: 1200px) {
+  .profile-dropdown-wrapper {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 899px) {
   .profile-dropdown-wrapper {
     display: none;
