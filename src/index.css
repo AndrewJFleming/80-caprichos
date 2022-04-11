@@ -29,7 +29,7 @@ h6,
 
 .page-comp-wrapper {
   height: 100%;
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding: 5px 30px;
   box-sizing: border-box;
 }
@@ -42,10 +42,13 @@ h6,
 .gallery-item-title {
   margin-top: 8px;
 }
+a,
 .gallery-item-title a,
 .single-image-category a {
   color: #713600;
 }
+a:hover,
+a:active,
 .gallery-item-title a:hover,
 .single-image-category a:hover,
 .gallery-item-title a:active,
@@ -62,7 +65,7 @@ h6,
 }
 
 .page-component-title {
-  margin: 2rem 0 0 0;
+  margin: 2rem 0 1rem 0;
   text-align: center;
 }
 
