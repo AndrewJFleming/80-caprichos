@@ -56,6 +56,27 @@ header {
   display: block;
 }
 
+.page-comp-links {
+  display: flex;
+  margin-right: 20px;
+}
+.page-comp-links li {
+  display: block;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.profile-avatar {
+  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .page-comp-links {
+    display: none;
+  }
+  .profile-avatar {
+    display: flex;
+  }
+}
 @media screen and (max-width: 899px) {
   header {
     padding-right: 0px;

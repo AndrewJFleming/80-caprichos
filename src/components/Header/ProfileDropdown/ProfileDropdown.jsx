@@ -1,19 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import PageCompLinks from "../PageCompLinks/PageCompLinks";
 
 import "./ProfileDropdown.css";
 
-const ProfileDropdown = () => {
+const ProfileDropdown = ({ otherLinks }) => {
   return (
     <div className="profile-dropdown-wrapper">
       <ul className="profile-dropdown-list">
         <span className="dropdown-section">
-          <Link className="dropdown-item-link" to="/about">
-            <li>About</li>
-          </Link>
-          <Link className="dropdown-item-link" to="/contact">
-            <li>Contact</li>
-          </Link>
+          <PageCompLinks otherLinks={otherLinks} />
         </span>
       </ul>
     </div>

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Home from "./pages/Home/Home";
 import VerticalMenu from "./components/VerticalMenu/VerticalMenu";
 import Header from "./components/Header/Header";
-import { categoryData, backgroundColorData } from "./data";
+import { otherLinks, categoryData, backgroundColorData } from "./data";
 import { Routes, Route } from "react-router-dom";
 import SingleImage from "./pages/SingleImage/SingleImage";
 import ImageCategory from "./pages/ImageCategory/ImageCategory";
@@ -24,6 +24,7 @@ function App() {
   return (
     <div className="app-wrapper">
       <VerticalMenu
+        otherLinks={otherLinks}
         categories={categories}
         backgroundColor={backgroundColor}
         vertMenuCollapsed={vertMenuCollapsed}
@@ -31,12 +32,16 @@ function App() {
       />
       <div className="app-inner">
         <Header
+          otherLinks={otherLinks}
           vertMenuCollapsed={vertMenuCollapsed}
           handleVertCollapse={handleVertCollapse}
         />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route
+            path="/about"
+            element={<About themes={categories[0].subCats} />}
+          />
           <Route path="/contact" element={<Contact />} />
           <Route path="/caprichos/:imageId" element={<SingleImage />} />
           <Route path="/category/:catId" element={<ImageCategory />} />

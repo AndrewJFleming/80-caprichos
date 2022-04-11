@@ -28,16 +28,6 @@
   cursor: pointer;
 }
 
-.dropdown-item-link,
-.dropdown-item-link {
-  color: #713600;
-}
-.dropdown-item-link:hover,
-.dropdown-item-link:active {
-  text-decoration: none;
-  color: #120d06;
-}
-
 /*
 Add dividers after all but the last dropdown-section span.
 */
