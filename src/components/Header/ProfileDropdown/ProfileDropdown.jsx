@@ -1,6 +1,6 @@
 import React from "react";
 
-import PageCompLinks from "../PageCompLinks/PageCompLinks";
+import PageCompLinks from "../../PageCompLinks/PageCompLinks";
 
 import "./ProfileDropdown.css";
 

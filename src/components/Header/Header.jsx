@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import LogoDark from "../../images/los-caprichos-logo.png";
 import DonkeyLogo from "../../images/donkey-logo, duotone.svg";
 import ProfileDropdown from "./ProfileDropdown/ProfileDropdown";
-import PageCompLinks from "./PageCompLinks/PageCompLinks";
+import PageCompLinks from "../PageCompLinks/PageCompLinks";
 import "./Header.css";
 
 const Header = ({ otherLinks, vertMenuCollapsed, handleVertCollapse }) => {
