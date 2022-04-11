@@ -30,16 +30,14 @@ const SingleImage = () => {
                 </div>
               </React.Fragment>
             )}
-            <div
-              classname="single-image-wrapper"
-              onClick={() => setIsFullscreen(!isFullscreen)}
-            >
+            <div classname="single-image-wrapper">
               <img
                 className={`single-image-fullsize ${
                   isFullscreen && "enlarged"
                 }`}
                 src={image?.fullsizeUrl}
                 alt={`${image?.title}, from fullsize url`}
+                onClick={() => setIsFullscreen(!isFullscreen)}
               />
             </div>
           </Container>
