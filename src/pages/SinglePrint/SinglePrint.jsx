@@ -3,11 +3,12 @@ import { Link, useParams } from "react-router-dom";
 
 import { Container } from "react-bootstrap";
 import { imageData } from "../../data.js";
-import "./SingleImage.css";
+import "./SinglePrint.css";
+import Image from "./Image/Image.jsx";
 
-const SingleImage = () => {
+const SinglePrint = () => {
   const { imageId } = useParams();
-  const [isFullscreen, setIsFullscreen] = useState();
+  const [isZoomedIn, setIsZoomedIn] = useState();
 
   return (
     <div className="page-comp-wrapper">
@@ -15,7 +16,7 @@ const SingleImage = () => {
         .filter((image) => image.id === imageId)
         .map((image) => (
           <Container>
-            {!isFullscreen && (
+            {!isZoomedIn && (
               <React.Fragment>
                 <h2 className="single-image-title">{image?.title}</h2>
                 <h5 className="single-image-english">
@@ -23,27 +24,25 @@ const SingleImage = () => {
                 </h5>
                 <div className="categories-wrapper">
                   {image?.categories.map((cat) => (
-                    <p className="single-image-category">
-                      <Link to={`/category/${cat.slug}`}>{cat.name}</Link>
-                    </p>
+                    <Link
+                      className="single-image-category"
+                      to={`/category/${cat.slug}`}
+                    >
+                      {cat.name}
+                    </Link>
                   ))}
                 </div>
               </React.Fragment>
             )}
-            <div classname="single-image-wrapper">
-              <img
-                className={`single-image-fullsize ${
-                  isFullscreen && "enlarged"
-                }`}
-                src={image?.fullsizeUrl}
-                alt={`${image?.title}, from fullsize url`}
-                onClick={() => setIsFullscreen(!isFullscreen)}
-              />
-            </div>
+            <Image
+              isZoomedIn={isZoomedIn}
+              image={image}
+              setIsZoomedIn={setIsZoomedIn}
+            />
           </Container>
         ))}
     </div>
   );
 };
 
-export default SingleImage;
+export default SinglePrint;

@@ -1,0 +1,17 @@
+.single-image-title {
+  margin: 2rem 0 0 0;
+  text-align: center;
+}
+.single-image-english {
+  margin: 0;
+  text-align: center;
+}
+
+.categories-wrapper {
+  margin: 0;
+  text-align: center;
+}
+.single-image-category {
+  text-decoration: underline;
+  margin-right: 10px;
+}
